@@ -1,0 +1,5 @@
+        if (numObj[s[i]] < numObj[s[i+1]]) {
+            //if less than substract s[i] from s[i+1]
+            num += numObj[s[i+1]]-numObj[s[i]];
+            i++;//we have to skip 2 nums since both the numbers are already dealt with in the above code but instead of i+=2 we only do i++ because when it reaches back to the for loop it again does i++ hence the 2 numbers are skipped.
+        }
